@@ -8,5 +8,4 @@ import ucha_barrera.kata_api.entities.brewerie;
 public interface brewerieRepository extends JpaRepository<brewerie, Long> {
     Page<brewerie> findAll(Pageable pageable);
 
-    Page<brewerie> findById(Long id, Pageable pageable);
 }
