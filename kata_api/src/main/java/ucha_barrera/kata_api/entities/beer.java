@@ -37,4 +37,6 @@ public class beer {
     private String description;
     private Long add_user;
     private LocalDateTime last_mod;
+
+
 }
