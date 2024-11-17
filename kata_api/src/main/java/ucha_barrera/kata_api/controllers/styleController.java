@@ -13,7 +13,7 @@ import ucha_barrera.kata_api.entities.style;
 import ucha_barrera.kata_api.repositories.styleRepository;
 
 @RestController
-@RequestMapping("/api/breweries")
+@RequestMapping("/api/style")
 public class styleController {
 
     @Autowired

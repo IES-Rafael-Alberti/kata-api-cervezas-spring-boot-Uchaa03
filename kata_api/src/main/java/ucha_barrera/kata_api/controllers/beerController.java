@@ -31,7 +31,7 @@ public class beerController {
         return ResponseEntity.ok(beerRepository.save(beer));
     }
 
-    @DeleteMapping()
+    @DeleteMapping("{id}")
     public ResponseEntity deleteBeer(@PathVariable Long id) {
         return beerRepository.findById(id)
                 .map(libro -> {

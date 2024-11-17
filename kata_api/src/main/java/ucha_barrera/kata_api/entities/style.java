@@ -22,7 +22,7 @@ public class style {
 
     @ManyToOne
     @JoinColumn(name = "categoryId")
-    private category categoryId;
+    private category category;
 
     private String style_name;
     private LocalDate last_mod;

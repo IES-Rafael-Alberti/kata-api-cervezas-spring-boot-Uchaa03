@@ -12,7 +12,7 @@ import ucha_barrera.kata_api.entities.category;
 import ucha_barrera.kata_api.repositories.categoryRepository;
 
 @RestController
-@RequestMapping("/api/categories")
+@RequestMapping("/api/category")
 public class categoryController {
 
     @Autowired

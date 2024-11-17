@@ -14,7 +14,7 @@ import ucha_barrera.kata_api.repositories.brewerieRepository;
 
 
 @RestController
-@RequestMapping("/api/breweries")
+@RequestMapping("/api/brewerie")
 public class brewerieController {
 
         @Autowired
