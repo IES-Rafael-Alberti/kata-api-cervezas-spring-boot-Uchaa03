@@ -19,8 +19,8 @@
 -- Table structure for table `categories`
 --
 
-DROP TABLE IF EXISTS `categories`;
-CREATE TABLE `categories` (
+DROP TABLE IF EXISTS category;
+CREATE TABLE category (
   `id` int(11) NOT NULL auto_increment,
   `cat_name` varchar(255) NOT NULL default '',
   `last_mod` datetime NOT NULL default '0000-00-00 00:00:00',
@@ -31,10 +31,10 @@ CREATE TABLE `categories` (
 -- Dumping data for table `categories`
 --
 
-LOCK TABLES `categories` WRITE;
-/*!40000 ALTER TABLE `categories` DISABLE KEYS */;
-INSERT INTO `categories` VALUES (1,'British Ale','2010-10-24 13:50:10'),(2,'Irish Ale','2010-06-08 00:00:00'),(3,'North American Ale','2010-06-08 00:00:00'),(4,'German Ale','2010-06-08 00:00:00'),(5,'Belgian and French Ale','2010-06-08 00:00:00'),(6,'International Ale','2010-06-08 00:00:00'),(7,'German Lager','2010-06-08 00:00:00'),(8,'North American Lager','2010-06-08 00:00:00'),(9,'Other Lager','2010-06-08 00:00:00'),(10,'International Lager','2010-06-08 00:00:00'),(11,'Other Style','2010-06-08 00:00:00');
-/*!40000 ALTER TABLE `categories` ENABLE KEYS */;
+LOCK TABLES category WRITE;
+/*!40000 ALTER TABLE category DISABLE KEYS */;
+INSERT INTO category VALUES (1,'British Ale','2010-10-24 13:50:10'),(2,'Irish Ale','2010-06-08 00:00:00'),(3,'North American Ale','2010-06-08 00:00:00'),(4,'German Ale','2010-06-08 00:00:00'),(5,'Belgian and French Ale','2010-06-08 00:00:00'),(6,'International Ale','2010-06-08 00:00:00'),(7,'German Lager','2010-06-08 00:00:00'),(8,'North American Lager','2010-06-08 00:00:00'),(9,'Other Lager','2010-06-08 00:00:00'),(10,'International Lager','2010-06-08 00:00:00'),(11,'Other Style','2010-06-08 00:00:00');
+/*!40000 ALTER TABLE category ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
