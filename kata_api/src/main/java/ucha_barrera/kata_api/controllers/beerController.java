@@ -28,6 +28,15 @@ public class beerController {
 
     @PostMapping()
     public ResponseEntity<beer> createBeer(@RequestBody beer beer) {
+        if (beer.getBrewery_id() != null) {
+            beer.setBrewery_id(beer.getBrewery_id());
+        }
+        if (beer.getCat_id() != null) {
+            beer.setCat_id(beer.getCat_id());
+        }
+        if (beer.getStyle_id() != null) {
+            beer.setStyle_id(beer.getStyle_id());
+        }
         return ResponseEntity.ok(beerRepository.save(beer));
     }
 
