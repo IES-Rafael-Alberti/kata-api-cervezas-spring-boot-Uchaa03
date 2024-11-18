@@ -21,13 +21,13 @@ public class style {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "categoryId")
-    private category category;
+    @JoinColumn(name = "cat_id")
+    private category cat_id;
 
     private String style_name;
     private LocalDate last_mod;
 
-    @OneToMany(mappedBy = "style")
+    @OneToMany(mappedBy = "style_id")
     private List<beer> beers;
 }
 //`id` int(11) NOT NULL auto_increment,

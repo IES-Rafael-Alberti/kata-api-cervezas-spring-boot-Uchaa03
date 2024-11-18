@@ -33,6 +33,6 @@ public class brewerie {
     private Long add_user;
     private LocalDateTime last_mod;
 
-    @OneToMany(mappedBy = "brewery")
+    @OneToMany(mappedBy = "brewery_id")
     private List<beer> beers;
 }

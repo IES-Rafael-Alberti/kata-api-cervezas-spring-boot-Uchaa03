@@ -17,18 +17,18 @@ public class beer {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "breweryId")
-    private brewerie brewery;
+    @JoinColumn(name = "brewery_id")
+    private brewerie brewery_id;
 
     private String name;
 
     @ManyToOne
-    @JoinColumn(name = "categoryId")
-    private category category;
+    @JoinColumn(name = "cat_id")
+    private category cat_id;
 
     @ManyToOne
-    @JoinColumn(name = "styleId")
-    private style style;
+    @JoinColumn(name = "style_id")
+    private style style_id;
 
     private Float abv;
     private Float ibu;

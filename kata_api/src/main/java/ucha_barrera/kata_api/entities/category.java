@@ -20,10 +20,10 @@ public class category {
     private String cat_name;
     private LocalDateTime last_mod;
 
-    @OneToMany(mappedBy = "category")
+    @OneToMany(mappedBy = "cat_id")
     private List<beer> beers;
 
-    @OneToMany(mappedBy = "category")
+    @OneToMany(mappedBy = "cat_id")
     private List<style> styles;
 
 }

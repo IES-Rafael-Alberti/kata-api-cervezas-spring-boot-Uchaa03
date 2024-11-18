@@ -62,14 +62,14 @@ public class beerController {
                     if (beerDetails.getDescription() != null) {
                         existingBeer.setDescription(beerDetails.getDescription());
                     }
-                    if (beerDetails.getBrewery() != null) {
-                        existingBeer.setBrewery(beerDetails.getBrewery());
+                    if (beerDetails.getBrewery_id() != null) {
+                        existingBeer.setBrewery_id(beerDetails.getBrewery_id());
                     }
-                    if (beerDetails.getCategory() != null) {
-                        existingBeer.setCategory(beerDetails.getCategory());
+                    if (beerDetails.getCat_id() != null) {
+                        existingBeer.setCat_id(beerDetails.getCat_id());
                     }
-                    if (beerDetails.getStyle() != null) {
-                        existingBeer.setStyle(beerDetails.getStyle());
+                    if (beerDetails.getStyle_id() != null) {
+                        existingBeer.setStyle_id(beerDetails.getStyle_id());
                     }
                     if (beerDetails.getLast_mod() != null) {
                         existingBeer.setLast_mod(beerDetails.getLast_mod());
