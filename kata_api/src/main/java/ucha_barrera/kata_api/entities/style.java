@@ -20,9 +20,8 @@ public class style {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "cat_id")
-    private category cat_id;
+    @Column(name = "cat_id")
+    private Long cat_id;
 
     private String style_name;
     private LocalDate last_mod;

@@ -16,25 +16,22 @@ public class beer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "brewery_id")
-    private brewerie brewery_id;
+    @Column(name = "brewery_id") //Solo queremos pillar el id
+    private Long brewery_id;
 
     private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "cat_id")
-    private category cat_id;
+    @Column(name = "cat_id")
+    private Long cat_id;
 
-    @ManyToOne
-    @JoinColumn(name = "style_id")
-    private style style_id;
+    @Column(name = "style_id")
+    private Long style_id;
 
     private Float abv;
     private Float ibu;
     private Float upc;
     private String filepath;
-    private String description;
+    private String descript;
     private Long add_user;
     private LocalDateTime last_mod;
 

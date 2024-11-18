@@ -68,8 +68,8 @@ public class beerController {
                     if (beerDetails.getFilepath() != null) {
                         existingBeer.setFilepath(beerDetails.getFilepath());
                     }
-                    if (beerDetails.getDescription() != null) {
-                        existingBeer.setDescription(beerDetails.getDescription());
+                    if (beerDetails.getDescript() != null) {
+                        existingBeer.setDescript(beerDetails.getDescript());
                     }
                     if (beerDetails.getBrewery_id() != null) {
                         existingBeer.setBrewery_id(beerDetails.getBrewery_id());

@@ -29,7 +29,7 @@ public class brewerie {
     private String phone;
     private String website;
     private String filepath;
-    private String description;
+    private String descript;
     private Long add_user;
     private LocalDateTime last_mod;
 
